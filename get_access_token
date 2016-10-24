@@ -1,0 +1,19 @@
+拿原始token
+------PHP版-----
+https://www.facebook.com/v2.3/dialog/oauth?client_id={client_id}&scope=pages_manage_instant_articles,pages_show_list,manage_pages,publish_pages&redirect_uri=http://moneyaaa.com/login.php
+
+https://graph.facebook.com/oauth/access_token?client_id={client_id}&client_secret={client_secret}&redirect_uri=http://moneyaaa.com/login.php&code=AQDPthGtccMiONqfVpSch6Ec0nRrtCS5CePGJfpVuY-MNHjstsv66jiamCaFkz2uCJvIDIOgIesmDY0kO8_tJRTqg77_vEQ5X-kXRiQomDGRUuGg1wITRoUuolki7Mx-NAt6oFE_uhcUHOQNRUs_XVJDvByiA9MS1QJAAuwCMT5MiMIjrNC9ur5fxu5gOx98g9jVaoHAkiHOw9uF7YIpPK3OFcas3VilF79DyGJ1F3SBGNzr9gtHa6HbUYroAdH_hSk2RFNmtuxwN3GZEpUYQhsG1UedKpU1qx9VRr1CvuBldUzNuDyEByVIdMGZq9hoE3Wvrfq-6_-2LdZ4hxITakvx
+---------------------
+
+延長token
+https://graph.facebook.com/oauth/access_token?grant_type=fb_exchange_token&client_id={client_id}&client_secret={client_secret}&&fb_exchange_token={access_token}
+
+取page token
+https://graph.facebook.com/me/accounts?access_token={access_token}
+
+page token去po文
+
+
+
+
+
