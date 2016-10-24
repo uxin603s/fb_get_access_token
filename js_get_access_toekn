@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<head>
+<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script></head>
+<body>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		var scope='pages_manage_instant_articles,pages_show_list,manage_pages,publish_pages';
+		FB.login(function(res) {
+			console.log(res)
+		},
+		{scope:scope});
+	})
+});
+</script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '{client_id}',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>	
+<button>login</button>
+</body>
+</html>
